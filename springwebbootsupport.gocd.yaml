@@ -28,7 +28,6 @@ pipelines:
                 - exec:
                     command: ./gradlew
                     arguments:
-                      - clean
                       - test
                       - jacocoTestReport
                       - check
