@@ -49,10 +49,8 @@ pipelines:
                 unit_test: xml/index.html
                 htmlReports: html/index.html
                 bugs_main: bugs/main.html
-                bugs_test: bugs/test.html
-                pmd_main: pmd/main.html
-                pmd_test: pmd/test.html
-               
+                pmd: pmd/main.html
+                
       - CodeQuality:
           jobs:
             CodeQuality:
