@@ -45,7 +45,7 @@ pipelines:
                     source: build/reports/pmd/*.html
                     destination: pmd
                 - build:
-                    source: build/jacoco/jacocoHtml/index.html
+                    source: build/reports/jacoco/index.html
                     destination: coverage
               tabs:
                 unit_test: xml/index.html
