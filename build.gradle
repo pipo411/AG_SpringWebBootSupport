@@ -41,14 +41,14 @@ dependencies {
 
 jacoco {
     toolVersion = "0.8.1"
-    reportsDir = file("$buildDir/jacoco")
+    reportsDir = file("$buildDir/reports/jacoco")
 }
 
 jacocoTestReport {
     reports {
         xml.enabled false
         csv.enabled false
-        html.destination file("${buildDir}/jacoco/jacocoHtml")
+        html.destination file("${buildDir}/reports/jacoco")
     }
 }
 
