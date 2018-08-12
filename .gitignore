@@ -1,3 +1,7 @@
+#Reject .gradle folder
+/.gradle/
+/build/
+
 ### Custom
 
 *.log
