@@ -40,15 +40,14 @@ pipelines:
                     source: build/test-results/test/*.xml
                     destination: xml
                 - build:
+                    source: build/reports/jacoco/**/*
+                    destination: coverage
+                - build:
                     source: build/reports/findbugs/*.html
                     destination: bugs
                 - build:
                     source: build/reports/pmd/*.html
-                    destination: pmd
-                 - test:
-                    source: build/reports/jacoco/**/*
-                    destination: coverage 
-                
+                    destination: pmd     
               tabs:
                 unit_test: xml/index.html
                 htmlReports: html/index.html
