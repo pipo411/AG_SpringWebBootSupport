@@ -28,6 +28,7 @@ pipelines:
                 - exec:
                     command: ./gradlew
                     arguments:
+                      - clean
                       - test
                       - jacocoTestReport
                       - check
@@ -44,6 +45,9 @@ pipelines:
                 - build:
                     source: build/reports/pmd/*.html
                     destination: pmd
+                - build:
+                    source: build/jacoco/jacocoHtml/index.html
+                    destination: coverage
               tabs:
                 unit_test: xml/index.html
                 htmlReports: html/index.html
@@ -51,6 +55,7 @@ pipelines:
                 bugs_test: bugs/test.html
                 pmd_main: pmd/main.html
                 pmd_test: pmd/test.html
+                coverage: coverage/index.html
       - CodeQuality:
           jobs:
             CodeQuality:
