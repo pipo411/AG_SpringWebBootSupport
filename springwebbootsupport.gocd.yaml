@@ -52,7 +52,7 @@ pipelines:
                 bugs_test: bugs/test.html
                 pmd_main: pmd/main.html
                 pmd_test: pmd/test.html
-      - Build:
+      - CodeQuality:
           jobs:
             CodeQuality:
               tasks:
