@@ -2,7 +2,7 @@ format_version: 3
 pipelines:
   spring-web-boot-support:
     lock_behavior: lockOnFailure
-    group: Spring Support
+    group: SpringSupport
     materials:
       repo:
         git: https://github.com/pipo411/AG_SpringWebBootSupport.git
