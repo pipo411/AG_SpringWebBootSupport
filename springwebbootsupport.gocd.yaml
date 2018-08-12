@@ -29,7 +29,7 @@ pipelines:
                     command: ./gradlew
                     arguments:
                       - test
-                    
+                      - jacocoTestReport
                       - check
               artifacts:
                 - build:
@@ -51,7 +51,7 @@ pipelines:
                 bugs_main: bugs/main.html
                 bugs_test: bugs/test.html
                 pmd_main: pmd/main.html
-                bugs_test: pmd/test.html
+                pmd_test: pmd/test.html
                 
       - CodeQuality:
           jobs:
